@@ -1,0 +1,95 @@
+
+
+.add-user-page {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  flex-direction: column;  
+  min-height: 100vh;       
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box; /
+}
+
+.add-user-page h1 {
+  color: #333;
+  margin-bottom: 20px; 
+  font-size: 2rem;
+  text-align: center;
+  width: 100%; 
+}
+
+form {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box; /* Prevent overflow */
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 4px rgba(0, 102, 204, 0.2);
+}
+
+form button {
+  background-color: #0066cc;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005bb5;
+}
+
+form button:active {
+  background-color: #004d99;
+}
+
+@media (max-width: 768px) {
+  .add-user-page {
+    padding: 20px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  form h1 {
+    font-size: 1.5rem;
+  }
+}

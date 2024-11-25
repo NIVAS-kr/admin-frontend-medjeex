@@ -1,0 +1,60 @@
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "./TestOverview.css"; 
+
+const TestOverview = () => {
+  const [testPapers, setTestPapers] = useState([]); 
+
+  useEffect(() => {
+    console.log(localStorage.getItem("testSeriesId"));
+    const fetchTestPapers = async () => {
+      try {
+        const newstore= JSON.parse(localStorage.getItem("testSeriesId"));
+        console.log(newstore);
+        console.log("error");
+        const response = await axios.post("http://localhost/3000/api/v1/all-test-papers", {
+          body:JSON.stringify(newstore),
+        });
+
+        if (response.data.success) {
+          setTestPapers(response.data.allTestPapers);
+        } else {
+          console.error("Failed to fetch test papers");
+        }
+      } catch (error) {
+        console.error("Error fetching test papers:", error);
+      }
+    };
+
+    fetchTestPapers();
+  }, []);
+
+  const handleViewTest = (testId) => {
+    alert(`Viewing details for Test ID: ${testId}`);
+    // Implement your logic to navigate or view test details
+  };
+
+  return (
+    <div className="test-overview-container">
+      <h2 className="header">Available Tests</h2>
+      <div className="test-card-container">
+        {testPapers.map((testPaper) => (
+          <div className="test-card" key={testPaper._id}>
+            <div className="test-details">
+              <p className="test-name">{testPaper.testName}</p>
+              <p className="test-creator">Created By: Admin</p>
+            </div>
+            <button
+              className="view-test-btn"
+              onClick={() => handleViewTest(testPaper._id)}
+            >
+              View Test
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default TestOverview;

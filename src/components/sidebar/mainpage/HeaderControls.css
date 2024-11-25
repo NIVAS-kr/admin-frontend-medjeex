@@ -1,0 +1,38 @@
+.header-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.control-button {
+  padding: 0.5rem 3rem;
+  font-size: 0.9rem;
+  border: 1px solid grey; /* Grey border */
+  color: black; /* Text color black */
+  background-color: transparent; /* No background color */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.control-button:hover {
+  background-color: #f0f0f0; /* Light grey background on hover */
+}
+
+
+
+.notification-icon {
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+.notification-icon:hover {
+  color: #555; /* Slightly lighter color on hover */
+}

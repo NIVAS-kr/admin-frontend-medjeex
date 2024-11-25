@@ -1,0 +1,34 @@
+.request-page {
+  margin-top: 1rem; /* Space between HeaderControls and RequestPage */
+  padding: 1rem;
+ 
+}
+
+.request-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 10px; /* Space for better alignment */
+  border-left: 3px solid grey; /* Grey left border */
+  /* Text color */
+}
+
+.see-all-button {
+ /* Button background color */
+ color: #2684FC;  /* Text color */
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  
+}
+
+

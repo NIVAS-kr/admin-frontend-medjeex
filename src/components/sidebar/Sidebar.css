@@ -1,0 +1,99 @@
+
+.sidebar {
+  width: 250px;
+  background-color: white;
+  color: black;
+  height: 100vh;
+display: flex;
+  flex-direction: column;
+  
+  padding-left:20px; 
+  border-right: 1px solid #ccc; 
+}
+
+
+/* Avatar and Name section */
+.avatar-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.name-section h3 {
+ 
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.occupation {
+  font-size: 14px;
+  color: #888;
+  margin-top:-10px;
+}
+.nav-options{
+  padding: 0 10px;
+}
+
+/* Navigation Options */
+.nav-options ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-options li {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding: 15px 15px;
+  margin:10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: black; /* Default text color */
+  border: none; /* Ensure no border by default */
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.nav-options li:hover {
+  background-color: #2684FC; /* Optional: Change the background color */
+  color:white;
+  /* Add a border on hover */
+  border-radius: 10px;
+   /* Optional: Add rounded corners */
+}
+
+/* Space */
+.space {
+  flex-grow: 1;
+}
+
+/* Image and Button Section */
+.image-section {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.sidebar-image {
+  width: 80%;
+  max-width: 150px;
+  margin-bottom: 15px;
+}
+
+.image-button {
+  background-color: #2684FC;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+

@@ -1,0 +1,71 @@
+.request-box {
+  margin-top: 1rem;
+  margin-bottom:1rem;
+  padding: 1rem;
+  border: 1px solid #ccc; 
+  border-radius: 20px;
+  background-color: #fff; 
+}
+
+.request-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.request-details {
+  flex: 1;
+}
+
+.request-name {
+  font-weight: bold;
+  margin: 0;
+}
+
+.created-by {
+  font-size: 0.9rem;
+  color: #555; /* Subtle color for normal text */
+  margin: 0.5rem 0;
+}
+
+.view-button {
+  background-color: transparent;
+  color: black;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  position: relative; /* To position the border directly under the button */
+}
+
+.view-button::after {
+  content: "";
+  display: block;
+  width: 75%; /* Matches button width */
+  height: 1px; /* Border thickness */
+  background-color: #ddd; /* Border color */
+  position: absolute;
+ 
+  bottom: -2px; /* Positions the border below the button */
+}
+
+
+
+.approve-button {
+  background-color: #007bff; /* Green for approval */
+  color: white;
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+

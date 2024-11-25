@@ -1,0 +1,97 @@
+.test-series-box1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.test-series-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.test-image {
+  margin-right: 1rem;
+}
+
+.test-series-image {
+  width: 150px; /* Adjust as needed */
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.test-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content to the top */
+}
+
+.test-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.created-by-test,
+.total-tests {
+  margin: 0.2rem 0;
+}
+
+.actions {
+  margin-top: -0.5rem;
+  display: flex;
+  flex-direction: column; /* Stack Open and Icons vertically */
+  align-items: flex-end; /* Align everything to the right */
+}
+
+.open-button-test {
+  background-color: #007bff; /* Blue color for the button */
+  color: white;
+  padding: 0.4rem 2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  margin-bottom: 0.2rem; /* Reduce the space below the open button */
+  margin-top: -3rem; /* Adjust the margin to move the button higher */
+  width: 10%; /* Allow button to size naturally */
+  align-self: flex-end; /* Align button to the right */
+}
+
+.action-icons {
+  display: flex;
+  justify-content: flex-end; /* Align the icons to the right */
+  gap: 1rem; /* Add space between the icons */
+  margin-top: 0.5rem; /* Space between Open button and icons */
+}
+
+.edit-icon,
+.delete-icon {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  
+  
+}
+
+.edit-icon:hover {
+  color: #007bff;
+}
+
+.delete-icon:hover {
+  color: red;
+}
+
+.open-button-test:hover {
+  background-color: #0056b3;
+}

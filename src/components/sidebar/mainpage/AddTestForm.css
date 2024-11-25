@@ -1,0 +1,144 @@
+/* Apply universal box-sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Form Modal */
+.form-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Form Container */
+.form-container {
+  background-color: white;
+  max-width: 800px;
+  width: 100%;
+  max-height: 90vh; /* Limit height to make it scrollable */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form Fields */
+.form-container label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-container input,
+.form-container select,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Row Inputs */
+.row-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.row-inputs div {
+  flex: 1;
+  min-width: calc(33.33% - 10px); /* Ensures three items per row */
+}
+
+/* Full-Width Input */
+.full-width-input {
+  width: 100%;
+}
+
+/* Buttons in the Right Corner */
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #d32f2f;
+}
+
+.save-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #388e3c;
+}
+
+/* Media Queries for Small Screens */
+@media (max-width: 768px) {
+  .row-inputs div {
+    min-width: 100%; /* Stack inputs on smaller screens */
+  }
+
+  .form-buttons {
+    justify-content: center; /* Center buttons on small screens */
+  }
+}
+
+.array-list {
+  display: flex; /* Align items in a row */
+  flex-wrap: wrap; /* Wrap to the next row if items exceed container width */
+  gap: 10px; /* Add space between items */
+}
+
+.array-item {
+  display: flex; /* Align text and icon in a row */
+  align-items: center; /* Vertically center items */
+  background-color: #f9f9f9; /* Optional: Add a background for better visibility */
+  padding: 5px 10px; /* Add padding for better spacing */
+  border: 1px solid #ddd; /* Optional: Add a border for better visibility */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.array-item .remove-icon {
+  margin-left: 10px; /* Add space between text and icon */
+  cursor: pointer; /* Make the cursor a pointer */
+  color: #f44336; /* Optional: Red color for delete icon */
+}
+
+.array-item .remove-icon:hover {
+  color: #d32f2f; /* Optional: Darker red on hover */
+}

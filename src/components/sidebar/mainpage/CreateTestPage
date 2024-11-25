@@ -1,0 +1,18 @@
+// CreateTestPage.js
+import React from 'react';
+
+const CreateTestPage = () => {
+  return (
+    <div>
+      <h1>Create New Test</h1>
+      {/* Add form fields to create a new test series here */}
+      <form>
+        <input type="text" placeholder="Test Title" />
+        <textarea placeholder="Test Description"></textarea>
+        <button type="submit">Create Test</button>
+      </form>
+    </div>
+  );
+};
+
+export default CreateTestPage;
